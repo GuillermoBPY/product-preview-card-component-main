@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap");
+
+:root {
+  --Darkcyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --Verydarkblue: hsl(212, 21%, 14%);
+  --Darkgrayishblue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+  --font-Fraunces: "Fraunces", serif; /* 500, 700 */
+  --font-Montserrat: "Montserrat", sans-serif; /* 700 */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.font-Montserrat {
+  font-family: var(--font-Montserrat);
+}
+
+.font-Fraunces {
+  font-family: var(--font-Fraunces);
+}
+
+a {
+  color: var(--Darkcyan);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.Darkgrayishblue {
+  color: var(--Darkgrayishblue);
+  font-size: 14px;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.main__container {
+  background-color: var(--Cream);
+  padding: 2rem 1rem 0rem;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  gap: 2rem;
+}
+
+.card {
+  background-color: var(--White);
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__figure--imgdkt {
+  display: none;
+}
+
+.card__article {
+  padding: 1rem 1.5rem;
+}
+
+.article__header h1 {
+  margin: 0.5rem 0 1rem;
+  line-height: 2rem;
+  font-size: 2rem;
+}
+
+.article__header p {
+  max-width: 88%;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.article__footer div {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.article__footer div span:first-child {
+  color: var(--Darkcyan);
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.article__footer div span:last-child {
+  text-decoration: line-through;
+}
+
+.article__footer button {
+  cursor: pointer;
+  color: var(--White);
+  background-color: var(--Darkcyan);
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: 1rem;
+  transition: background-color 0.3s;
+}
+
+.article__footer button:hover {
+  background-color: hsl(141, 80%, 31%);
+}
+
+.article__footer button:active {
+  background-color: hsl(158, 37%, 27%);
+}
+
+.article__footer button::before {
+  margin-right: 1rem;
+  content: url("./images/icon-cart.svg");
+}
+
+.attribution {
+  text-align: center;
+}
+
+@media (width >= 992px) {
+  .card {
+    flex-direction: row;
+    max-width: 600px;
+  }
+
+  .card__article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .card__figure img {
+    height: 100%;
+    width: 300px;
+  }
+
+  .card__figure--imgmbl {
+    display: none;
+  }
+
+  .card__figure--imgdkt {
+    display: block;
+  }
+
+  .article__header h1 {
+    margin-top: 1rem;
+  }
+}
