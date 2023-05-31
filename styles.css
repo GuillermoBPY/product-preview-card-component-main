@@ -72,7 +72,9 @@ img {
   line-height: 2rem;
   font-size: 2rem;
 }
-
+.article__header--category {
+  letter-spacing: 5px;
+}
 .article__header p {
   max-width: 88%;
   line-height: 1.5rem;
