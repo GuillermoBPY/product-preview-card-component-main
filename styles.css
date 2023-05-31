@@ -68,6 +68,7 @@ img {
 }
 
 .article__header h1 {
+  color: var(--Verydarkblue);
   margin: 0.5rem 0.5rem 1rem 0;
   line-height: 2rem;
   font-size: 2rem;
