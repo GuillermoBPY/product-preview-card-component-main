@@ -67,7 +67,7 @@ img {
   padding: 1rem 1.5rem;
 }
 
-.article__header h1 {
+.article__header h2 {
   margin: 0.5rem 0 1rem;
   line-height: 2rem;
   font-size: 2rem;
@@ -149,7 +149,7 @@ img {
     display: block;
   }
 
-  .article__header h1 {
+  .article__header h2 {
     margin-top: 1rem;
   }
 }
